@@ -12,6 +12,10 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Employee Management API")
 
+@app.get("/")
+def root():
+    return {"status": "API is running"}
+
 # Default admin user setup
 @app.on_event("startup")
 def startup_populate_db():
