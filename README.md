@@ -57,3 +57,4 @@ Run the automated tests using `pytest`:
 ```powershell
 pytest
 ```
+POSTMAN
